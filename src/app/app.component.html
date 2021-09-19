@@ -1,0 +1,12 @@
+<div ng-app="my-app"></div>
+<div class="flex">
+  <div class="column col-left">
+    <number (newNumEvent)="setNum($event)"></number>
+  </div>
+  <div class="column col-middle">
+    <dropdown [num]="num" (newValueEvent)="setValue($event)"></dropdown>
+  </div>
+  <div class="column col-right">
+    <label>{{isPrimeOrFibo}}</label>
+  </div>
+</div>
